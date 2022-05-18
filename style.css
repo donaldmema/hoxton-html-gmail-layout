@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .container {
+      height: 100vh;
+      display: grid;
+      grid-template: 
+      'header header header header' auto
+      'inbox mail-size settings widgets' auto
+      'inbox mail settings widgets' 1fr
+      'meetings mail settings widgets' 1fr /
+      20% 1fr 20% 50px;
+  }
+
+  .header {
+      display: inline;
+      align-content: center;
+      grid-area: header;
+      background-color: white;
+      padding: 1rem;
+  }
+  .inbox-section {
+    grid-area: inbox;
+    background-color: rgb(238, 135, 135);
+    padding: 0.5rem;
+  }
+  .mail-size-section {
+    grid-area: mail-size;
+    background-color: lightcyan;
+    padding: 0.5rem;
+  }
+  .quick-settings {
+    grid-area: settings;
+    background-color: lightgoldenrodyellow;
+    padding: 0.5rem;
+  }
+  .rightside-widgets {
+    grid-area: widgets;
+    background-color: rgb(241, 224, 202);
+    padding: 0.5rem;
+  }
+  .meetings-section {
+    grid-area: meetings;
+    background-color: rgb(160, 179, 238);
+    padding: 0.5rem;
+  }
+  .mail-section {
+    grid-area: mail;
+    background-color: whitesmoke;
+    padding: 0.7rem;
+  }
+
+  .menu-icon {
+      border: none;
+      margin: 5px;
+      margin-right: 20px;
+      color: white;
+      text-align: center;
+      text-decoration: none;
+      display: inline;
+      cursor: pointer;
+  }
+
+  input[type=text] {
+    margin-left: 5px;
+    padding: 5px;
+    font-size: 14px;
+    border: 1px solid grey;
+    width: 50%;
+    background: #f1f1f1;
+  }
